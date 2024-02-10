@@ -1,0 +1,48 @@
+//List
+import numpy as np
+numbers = [1,2,3,4,5,6,7,8,9,10]
+
+square_num = [num**2 for num in numbers]
+for num in square_num:
+    numbers.append(num)
+print(numbers)
+Execution output from Feb 10, 2024 1:45 PM
+0KB
+	Stream
+		[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+//Tuple
+num_1 = (1,2,3,4,5)
+product = 1
+for num in num_1:
+    product *= num
+print(f'The product of all element in the even number tuple: {product}')
+Execution output from Feb 10, 2024 1:50 PM
+0KB
+	Stream
+		The product of all element in the even number tuple: 120
+
+//Dictionary
+dict ={
+
+    'a':7,
+    'b':8,
+    'c':9,
+    'd':5,
+    'e':6
+}
+print(dict)
+Execution output from Feb 10, 2024 1:51 PM
+0KB
+	Stream
+		{'a': 7, 'b': 8, 'c': 9, 'd': 5, 'e': 6}
+
+//Function
+def square(x):
+    return x**2
+numbers = [1,2,3,4,5]
+print(f'The squared numbers are: {list(map(square,numbers))}')
+Execution output from Feb 10, 2024 1:53 PM
+0KB
+	Stream
+		The squared numbers are: [1, 4, 9, 16, 25]
